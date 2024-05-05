@@ -1,0 +1,11 @@
+:root {
+  --background-color: #fff; /* Light mode background */
+  --text-color: #000; /* Light mode text */
+  --secondary-color: #333; /* Light mode secondary */
+  --accent-color: #007bff; /* Light mode accent */
+
+  --background-color-dark: #000; /* Dark mode background */
+  --text-color-dark: #fff; /* Dark mode text */
+  --secondary-color-dark: #ccc; /* Dark mode secondary */
+  --accent-color-dark: #0099ff; /* Dark mode accent */
+}
