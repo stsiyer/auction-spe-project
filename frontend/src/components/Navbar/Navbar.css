@@ -1,0 +1,135 @@
+/* Base styles for the navbar */
+.auction-navbar {
+    background-color: #cdd3ce;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Container for responsive layout */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  
+  /* Styles for the brand name */
+  .navbar-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Styles for the navigation items list */
+  .nav-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Styles for individual navigation items */
+  .nav-item {
+    margin-right: 1rem;
+  }
+  
+  .nav-link {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .nav-link.active {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Styles for the dropdown menu */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle {
+    cursor: pointer;
+  }
+  .nav-link.dropdown-toggle {
+    /* Inherit styles from the base .nav-link class */
+    /* Add additional styles specific to the dropdown toggle button */
+    padding: 0.5rem 1rem 0.5rem 1.5rem; /* Adjust padding if needed */
+    display: flex; /* Allow space for an icon (optional) */
+    align-items: center; /* Align content vertically */
+    position: relative; /* Needed for positioning the caret icon (optional) */
+    border: none;
+  }
+  
+  /* Optional: Style for the dropdown caret icon (adjust as needed) */
+  .nav-link.dropdown-toggle::after {
+    content: "";
+    display: inline-block;
+    width: 0.3em;
+    height: 0.3em;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0.3em solid #ccc;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-link.dropdown-toggle:hover::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-item {
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .dropdown:hover .dropdown-menu { /* Show dropdown menu on hover */
+    display: block;
+  }
+  
+  /* Styles for the search form */
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-form input[type="text"] {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+  }
+  
+  .search-form button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
