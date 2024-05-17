@@ -1,5 +1,5 @@
 pipeline{
-    agent{ any }
+    agent any 
     tools {
         // Install Node.js tool with a specific version
         nodejs 'nodejs'
