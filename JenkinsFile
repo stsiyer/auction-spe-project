@@ -1,5 +1,5 @@
 pipeline{
-    agent{ label 'Jenkins-Agent'}
+    agent{ any }
     tools {
         // Install Node.js tool with a specific version
         nodejs 'nodejs'
