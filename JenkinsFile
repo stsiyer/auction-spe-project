@@ -13,7 +13,7 @@ pipeline{
         stage('Checkout') {
       steps {
         // Check out the repository from GitHub
-        git branch: 'main', credentialsId: 'github' url: 'https://github.com/stsiyer/auction-spe-project.git'
+        git branch: 'main', credentialsId: 'github', url: 'https://github.com/stsiyer/auction-spe-project.git'
       }
         }
 
