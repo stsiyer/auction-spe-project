@@ -2,7 +2,7 @@ pipeline{
     agent{ label 'Jenkins-Agent'}
     tools {
         // Install Node.js tool with a specific version
-        nodejs 'node:latest'
+        nodejs 'nodejs'
     }
 
     // environment {
