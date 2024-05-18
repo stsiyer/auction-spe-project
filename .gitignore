@@ -1,0 +1,7 @@
+.env
+/mongo-app.yaml
+/web-app.yaml
+/secret.yaml
+/mongo-config.yaml
+node_modules/
+/logs.txt
