@@ -1,6 +1,5 @@
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken'); // For generating tokens
-const asyncHandler=require("express-async-handler");
+const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const jwtSecret = process.env.JWT_SECRET;
 const User = require('../models/User');
