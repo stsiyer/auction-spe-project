@@ -13,7 +13,7 @@ pipeline{
         stage('Checkout') {
       steps {
         // Check out the repository from GitHub
-        git branch: 'main', credentialsId: 'github', url: 'https://github.com/stsiyer/auction-spe-project.git'
+        git branch: 'test', credentialsId: 'github', url: 'https://github.com/stsiyer/auction-spe-project.git'
       }
         }
 
@@ -38,7 +38,7 @@ pipeline{
         stage('Install Backend Dependencies') {
       steps {
         // Change to the backend directory and install dependencies
-        dir('server') {
+        dir('backend') {
           sh 'npm install'
         //   sh 'export MONGODB_URI=$MONGODB_URI'
         //   sh 'export TOKEN_KEY=$TOKEN_KEY'
