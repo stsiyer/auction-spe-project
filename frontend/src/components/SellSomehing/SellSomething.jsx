@@ -10,7 +10,7 @@ const SellSomething = () => {
     listedBy: null, // Likely handled by backend based on logged-in user
     minBid: '',
   });
-  const today = new Date().toISOString().slice(0, 10);
+  // const today = new Date().toISOString().slice(0, 10);
   const [isLoading, setIsLoading] = useState(false); // State for loading indicator
   const [errorMessage, setErrorMessage] = useState(''); // State for error message
 
