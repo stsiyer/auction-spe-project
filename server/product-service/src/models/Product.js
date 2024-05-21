@@ -35,6 +35,11 @@ const productSchema = new mongoose.Schema({
     type:Date,
     required:false,
     default:Date.now
+  },
+  highestBidder:{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: false
   }
 });
 

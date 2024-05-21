@@ -1,0 +1,5 @@
+.auction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column size and number of columns */
+    gap: 20px;
+  }

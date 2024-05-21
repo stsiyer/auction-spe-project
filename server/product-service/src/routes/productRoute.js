@@ -1,6 +1,6 @@
 const express = require('express');
 const { addProduct, allProducts,getProduct } = require('../controllers/productControllers.js');
-const validateToken = require('../../../user-service/src/middleware/validateTokenHandler.js');
+const validateToken = require('../middleware/validateTokenHandler.js')
 const router = express.Router();
 
 // Call back function.

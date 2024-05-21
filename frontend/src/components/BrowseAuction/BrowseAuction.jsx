@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import './BrowseAuction.css'
 const BrowseAuction = () => {
-    const [auctions, setAuctions] = useState([]); // State to store auction data
+  const [auctions, setAuctions] = useState([]); // State to store auction data
 
   useEffect(() => {
     // Fetch auction data from your API or data source
     const fetchAuctions = async () => {
-      const response = await fetch('/api/auctions'); // Replace with your API endpoint
+      const response = await fetch('http://localhost:5001/product/allProducts'); // Replace with your API endpoint
       const data = await response.json();
       setAuctions(data);
     };
@@ -18,24 +19,24 @@ const BrowseAuction = () => {
     <div className="browse-auctions">
       <h1>Browse Auctions</h1>
       {auctions.length > 0 ? (
-        <ul className="auction-list">
+        <section className="auction-grid">
           {auctions.map((auction) => (
-            <li key={auction.id} className="auction-item">
-              <Link to={`/auctions/${auction.id}`}>
-                <img src={auction.imageUrl} alt={auction.title} />
+            <article key={auction._id} className="auction-item">
+              {/* <Link to={`http://localhost:5001/product/${auction.id}`}> */}
+                <img src={auction.image} alt={auction.title} style={{ width: '100px', height: '100px', objectFit: 'cover' }}/>
                 <div className="auction-details">
-                  <h3>{auction.title}</h3>
-                  <p>{auction.description.slice(0, 100)}...</p>
-                  <span>Current Bid: ${auction.currentBid}</span>
+                  <h3>{auction.description}</h3>
+                  <span>Current Bid: Rs {auction.currHighestBid}</span>
                 </div>
-              </Link>
-            </li>
+              {/* </Link> */}
+            </article>
           ))}
-        </ul>
+        </section>
       ) : (
         <p>No auctions found.</p>
       )}
     </div>
   );
 };
+
 export default BrowseAuction;
