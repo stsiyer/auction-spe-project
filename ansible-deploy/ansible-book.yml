@@ -1,0 +1,56 @@
+---
+- name: Deploy app to minikube
+  hosts: localhost
+  connection: local
+  become: true
+  vars:
+    ansible_python_interpreter: /var/lib/jenkins/workspace/auction-app/venv/bin/python
+  collections:
+  collections:
+    - community.kubernetes
+
+  tasks:
+  - name: Create minikube namespace
+    k8s:
+      state: present
+      kubeconfig: /home/ganesh/.kube/config
+      definition:
+        apiVersion: v1
+        kind: Namespace
+        metadata:
+          name: minikube
+
+  - name: Apply secret
+    k8s:
+      state: present
+      kubeconfig: /home/ganesh/.kube/config 
+      definition: "{{ lookup('file', '/var/lib/jenkins/workspace/auction-app/kubernetes-config/backend-secret.yaml') }}"
+      namespace: minikube
+
+  - name: Apply configmap
+    k8s:
+      state: present
+      kubeconfig: /home/ganesh/.kube/config 
+      definition: "{{ lookup('file', '../kubernetes-config/frontend-configmap.yaml') }}"
+      namespace: minikube
+
+  - name: Apply ingress (if needed)
+    k8s:
+      state: present
+      kubeconfig: /home/ganesh/.kube/config 
+      definition: "{{ lookup('file', '../kubernetes-config/ingress.yaml') }}"
+      namespace: minikube
+
+  - name: Apply backend deployment
+    k8s:
+      state: present
+      kubeconfig: /home/ganesh/.kube/config 
+      definition: "{{ lookup('file', '../kubernetes-config/backend.yaml') }}"
+      namespace: minikube
+
+  - name: Apply frontend deployment
+    k8s:
+      state: present
+      kubeconfig: /home/ganesh/.kube/config 
+      definition: "{{ lookup('file', '../kubernetes-config/frontend.yaml') }}"
+      namespace: minikube
