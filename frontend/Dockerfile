@@ -38,7 +38,7 @@ RUN npm run build
 RUN npm install -g serve
 
 # Expose the port on which the Node.js server will run
-EXPOSE 2004
+EXPOSE 3000
 
 # Command to run the Node.js server
-CMD ["npm", "run", "start:prod"]
+CMD ["npm", "run", "start"]

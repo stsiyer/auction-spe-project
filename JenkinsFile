@@ -35,25 +35,6 @@ pipeline {
             }
         }
 
-        stage('Build Project') {
-            parallel {
-                stage('Build Frontend') {
-                    steps {
-                        dir('frontend') {
-                            sh 'npm run build'
-                        }
-                    }
-                }
-                // stage('Build Backend') {
-                //     steps {
-                //         dir('backend') {
-                //             sh 'npm run build' // Adjust if there is a backend build script
-                //         }
-                //     }
-                // }
-            }
-        }
-
         stage('Build Docker Images') {
             parallel {
                 stage('Build Frontend Docker Image') {
@@ -102,10 +83,6 @@ pipeline {
         }
         failure {
             echo 'Pipeline failed.'
-        }
-        cleanup {
-            echo 'Cleaning up workspace'
-            deleteDir()
         }
     }
 }
