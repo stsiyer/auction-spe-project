@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        DOCKER_USERNAME = credentials('dockerhub-credentials')
+        DOCKER_CREDENTIALS_ID = 'dockerhub-credentials'
     }
 
     stages {
@@ -44,13 +44,13 @@ pipeline {
                         }
                     }
                 }
-                // stage('Build Backend') {
-                //     steps {
-                //         dir('backend') {
-                //             sh 'npm run build' // Adjust if there is a backend build script
-                //         }
-                //     }
-                // }
+                stage('Build Backend') {
+                    steps {
+                        dir('backend') {
+                            sh 'npm run build' // Adjust if there is a backend build script
+                        }
+                    }
+                }
             }
         }
 
@@ -59,14 +59,20 @@ pipeline {
                 stage('Build Frontend Docker Image') {
                     steps {
                         dir('frontend') {
-                            sh 'docker build -t $DOCKER_USERNAME/frontend-app .'
+                            withCredentials([usernamePassword(credentialsId: DOCKER_CREDENTIALS_ID, usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                                sh 'echo $DOCKER_USERNAME'
+                                sh 'docker build -t $DOCKER_USERNAME/frontend-app .'
+                            }
                         }
                     }
                 }
                 stage('Build Backend Docker Image') {
                     steps {
                         dir('backend') {
-                            sh 'docker build -t $DOCKER_USERNAME/backend-app .'
+                            withCredentials([usernamePassword(credentialsId: DOCKER_CREDENTIALS_ID, usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                                sh 'echo $DOCKER_USERNAME'
+                                sh 'docker build -t $DOCKER_USERNAME/backend-app .'
+                            }
                         }
                     }
                 }
@@ -75,11 +81,13 @@ pipeline {
 
         stage('Push Docker Images') {
             steps {
-                script {
-                    docker.withRegistry('', 'dockerhub-credentials') {
+                withCredentials([usernamePassword(credentialsId: DOCKER_CREDENTIALS_ID, usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                    script {
+                        sh 'docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD'
+
                         sh 'docker tag $DOCKER_USERNAME/frontend-app $DOCKER_USERNAME/frontend-app:latest'
                         sh 'docker push $DOCKER_USERNAME/frontend-app:latest'
-                        
+
                         sh 'docker tag $DOCKER_USERNAME/backend-app $DOCKER_USERNAME/backend-app:latest'
                         sh 'docker push $DOCKER_USERNAME/backend-app:latest'
                     }
@@ -94,6 +102,10 @@ pipeline {
         }
         failure {
             echo 'Pipeline failed.'
+        }
+        cleanup {
+            echo 'Cleaning up workspace'
+            deleteDir()
         }
     }
 }
