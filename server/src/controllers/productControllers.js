@@ -1,5 +1,5 @@
 require("dotenv").config();
-const User = require("../../../user-service/src/models/User");
+const User = require("../models/User");
 const Product = require("../models/Product");
 //Get All Products
 const allProducts = async (req, res) => {
