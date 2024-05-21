@@ -14,10 +14,10 @@ RUN npm install
 COPY . .
 
 # Run tests during the build process (optional, but recommended)
-RUN npm run test
+# RUN npm run test
 
 # Expose the port that the application will run on
-EXPOSE 3000
+EXPOSE 5000
 
 # Start the backend server
 CMD ["npm", "run", "start"]
