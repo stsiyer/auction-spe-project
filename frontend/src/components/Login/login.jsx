@@ -16,7 +16,7 @@ function LoginPage() {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/user/signin', {
+      const response = await axios.post('http://backend-service:30002/user/signin', {
         email,
         password,
       });

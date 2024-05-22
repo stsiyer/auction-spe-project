@@ -7,7 +7,7 @@ const BrowseAuction = () => {
   useEffect(() => {
     // Fetch auction data from your API or data source
     const fetchAuctions = async () => {
-      const response = await fetch('http://localhost:5000/product/allProducts'); // Replace with your API endpoint
+      const response = await fetch('http://backend-service:30002/product/allProducts'); // Replace with your API endpoint
       const data = await response.json();
       setAuctions(data);
     };
@@ -22,7 +22,7 @@ const BrowseAuction = () => {
         <section className="auction-grid">
           {auctions.map((auction) => (
             <article key={auction._id} className="auction-item">
-              {/* <Link to={`http://localhost:5000/product/${auction.id}`}> */}
+              {/* <Link to={`http://backend-service:30002/product/${auction.id}`}> */}
                 <img src={auction.image} alt={auction.title} style={{ width: '100px', height: '100px', objectFit: 'cover' }}/>
                 <div className="auction-details">
                   <h3>{auction.description}</h3>
