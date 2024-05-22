@@ -54,7 +54,7 @@ const SellSomething = () => {
       };
       console.log(productData);
       // Replace with your actual backend API endpoint and expected data format
-      const response = await axios.post('http://localhost:5000/product/addProduct', productData);
+      const response = await axios.post('http://192.168.49.2:30002/product/addProduct', productData);
 
       if (response.status === 200) {
         console.log('Product created successfully:', response.data);
