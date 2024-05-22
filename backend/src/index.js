@@ -12,12 +12,10 @@ const connectDb = require("./config/dbConnection.js");
 connectDb();
 // Parse incoming request bodies
 app.use(bodyParser.json());
-app.use(cors({
-    origin: '*'
-  }));
+app.use(cors());
 
 app.use('/user', userRoutes);
 app.use('/wallet', walletRoutes);
 app.use('/product', productRoutes);
 app.use('/product',bidderRoutes);
-app.listen(port, () => console.log(`Server listening on port ${port} started 123`));
+app.listen(port, () => console.log(`Server listening on port ${port} new`));
