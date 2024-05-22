@@ -43,4 +43,4 @@ spec:
       protocol: TCP
       port: 8082
       targetPort: 5000
-      nodePort: 30002
+      nodePort: 3000
