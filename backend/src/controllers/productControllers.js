@@ -20,8 +20,9 @@ const getProduct = async (req, res) => {
 };
 //Add a Product
 const addProduct = async (req, res) => {
+  console.log(req.body);
   const { productName, description, image, timeToEnd, minBid } =req.body;
-
+  console.log(req.body);
   // Validate user input (implement proper validation)
   if (!productName || !description || !image || !timeToEnd || !minBid ) {
     return res.status(400).json({ message: "Please fill in all fields" });
