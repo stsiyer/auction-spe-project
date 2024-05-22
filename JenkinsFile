@@ -1,58 +1,94 @@
-pipeline{
-    agent any 
+pipeline {
+    agent any
+
     tools {
-        // Install Node.js tool with a specific version
         nodejs 'nodejs'
     }
 
-    // environment {
-    //     JWT_SECRET = 'TestSecreatKey'
-    //     MONGO_URI = 'mongodb+srv://<username>:<password>@cluster0.zct2z4b.mongodb.net/?retryWrites=true&w=majority'
-    // }
+    environment {
+        DOCKER_CREDENTIALS_ID = 'dockerhub-credentials'
+    }
+
     stages {
         stage('Checkout') {
-      steps {
-        // Check out the repository from GitHub
-        git branch: 'main', credentialsId: 'github', url: 'https://github.com/stsiyer/auction-spe-project.git'
-      }
+            steps {
+                git branch: 'test', credentialsId: 'github', url: 'https://github.com/stsiyer/auction-spe-project.git'
+            }
         }
 
-        stage('Install Client Dependencies') {
-      steps {
-        // Change to the client directory and install dependencies
-        dir('frontend') {
-          sh 'npm install'
-        }
-      }
+        stage('Install Dependencies') {
+            parallel {
+                stage('Install Client Dependencies') {
+                    steps {
+                        dir('frontend') {
+                            sh 'npm install'
+                        }
+                    }
+                }
+                stage('Install Backend Dependencies') {
+                    steps {
+                        dir('backend') {
+                            sh 'npm install'
+                        }
+                    }
+                }
+            }
         }
 
-        stage('Build frontend') {
-      steps {
-        // Change to the client directory and run the build command
-        dir('frontend') {
-          sh 'npm run build'
-        }
-      }
+        stage('Build Docker Images') {
+            parallel {
+                stage('Build Frontend Docker Image') {
+                    steps {
+                        dir('frontend') {
+                            withCredentials([usernamePassword(credentialsId: DOCKER_CREDENTIALS_ID, usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                                sh 'echo $DOCKER_USERNAME'
+                                sh 'docker build -t $DOCKER_USERNAME/frontend-app .'
+                            }
+                        }
+                    }
+                }
+                stage('Build Backend Docker Image') {
+                    steps {
+                        dir('backend') {
+                            withCredentials([usernamePassword(credentialsId: DOCKER_CREDENTIALS_ID, usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                                sh 'echo $DOCKER_USERNAME'
+                                sh 'docker build -t $DOCKER_USERNAME/backend-app .'
+                            }
+                        }
+                    }
+                }
+            }
         }
 
-        stage('Install Backend Dependencies') {
-      steps {
-        // Change to the backend directory and install dependencies
-        dir('server') {
-          sh 'npm install'
-        //   sh 'export MONGODB_URI=$MONGODB_URI'
-        //   sh 'export TOKEN_KEY=$TOKEN_KEY'
+        stage('Push Docker Images') {
+            steps {
+                withCredentials([usernamePassword(credentialsId: DOCKER_CREDENTIALS_ID, usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                    script {
+                        sh 'docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD'
+
+                        sh 'docker tag $DOCKER_USERNAME/frontend-app $DOCKER_USERNAME/frontend-app:latest'
+                        sh 'docker push $DOCKER_USERNAME/frontend-app:latest'
+
+                        sh 'docker tag $DOCKER_USERNAME/backend-app $DOCKER_USERNAME/backend-app:latest'
+                        sh 'docker push $DOCKER_USERNAME/backend-app:latest'
+                    }
+                }
+            }
         }
-      }
+
+        stage('Deploy with Ansible') {
+          steps {
+              sh 'ansible-playbook -vvv ansible-deploy/ansible-book.yml -i ansible-deploy/inventory'
+            }
         }
     }
 
     post {
         success {
-      echo 'Pipeline completed successfully!'
+            echo 'Pipeline completed successfully!'
         }
         failure {
-      echo 'Pipeline failed.'
+            echo 'Pipeline failed.'
         }
     }
 }

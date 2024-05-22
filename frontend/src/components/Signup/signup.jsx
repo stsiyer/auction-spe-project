@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './signup.css';
 
@@ -10,6 +10,20 @@ function SignupForm() {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [signupSuccess, setSignupSuccess] = useState(false);
+
+  useEffect(() => {
+    const checkHealth = async () => {
+      try {
+        const response = await fetch('http://192.168.49.2:30002/health');
+        const data = await response.text();
+        alert(`Health Check: ${data}`);
+      } catch (error) {
+        alert(`Health Check Failed: ${error.message}`);
+      }
+    };
+
+    checkHealth();
+  }, []);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -27,7 +41,7 @@ function SignupForm() {
 
     try {
       // Simulate sending signup data to backend (replace with your API call)
-      const response = await fetch('http://localhost:5000/user/signup', {
+      const response = await fetch('http://192.168.49.2:30002/user/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, email, password }),
@@ -36,6 +50,7 @@ function SignupForm() {
       if (!response.ok) {
         throw new Error(`Signup failed with status: ${response.status}`);
       }
+
       console.log(response);
       console.log('Signup successful!');
       navigate('/login');

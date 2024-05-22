@@ -10,7 +10,7 @@ const SellSomething = () => {
     listedBy: null, // Likely handled by backend based on logged-in user
     minBid: '',
   });
-  const today = new Date().toISOString().slice(0, 10);
+  // const today = new Date().toISOString().slice(0, 10);
   const [isLoading, setIsLoading] = useState(false); // State for loading indicator
   const [errorMessage, setErrorMessage] = useState(''); // State for error message
 
@@ -54,7 +54,7 @@ const SellSomething = () => {
       };
       console.log(productData);
       // Replace with your actual backend API endpoint and expected data format
-      const response = await axios.post('http://localhost:5000/product/addProduct', productData);
+      const response = await axios.post('http://192.168.49.2:30002/product/addProduct', productData);
 
       if (response.status === 200) {
         console.log('Product created successfully:', response.data);
