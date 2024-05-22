@@ -20,4 +20,4 @@ app.use('/user', userRoutes);
 app.use('/wallet', walletRoutes);
 app.use('/product', productRoutes);
 app.use('/product',bidderRoutes);
-app.listen(port, () => console.log(`Server listening on port ${port}`));
+app.listen(port, () => console.log(`Server listening on port ${port} started`));
