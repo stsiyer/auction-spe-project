@@ -14,7 +14,7 @@ function SignupForm() {
   useEffect(() => {
     const checkHealth = async () => {
       try {
-        const response = await fetch('http://192.168.49.2:30002/health');
+        const response = await fetch('http://localhost:5000/health');
         const data = await response.text();
         alert(`Health Check: ${data}`);
       } catch (error) {
@@ -41,7 +41,7 @@ function SignupForm() {
 
     try {
       // Simulate sending signup data to backend (replace with your API call)
-      const response = await fetch('http://192.168.49.2:30002/user/signup', {
+      const response = await fetch('http://localhost:5000/user/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, email, password }),
