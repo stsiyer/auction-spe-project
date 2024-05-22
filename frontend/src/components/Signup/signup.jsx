@@ -27,7 +27,7 @@ function SignupForm() {
 
     try {
       // Simulate sending signup data to backend (replace with your API call)
-      const response = await fetch('http://backend-service:30002/user/signup', {
+      const response = await fetch('http://192.168.49.2:30002/user/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, email, password }),

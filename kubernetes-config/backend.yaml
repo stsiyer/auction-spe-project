@@ -22,7 +22,7 @@ spec:
             - name: JWT_SECRET
               value: "secret"
             - name: PORT
-              value: "5001"
+              value: "5000"
             - name: CONNECTION_STRING
               valueFrom:
                 secretKeyRef:
