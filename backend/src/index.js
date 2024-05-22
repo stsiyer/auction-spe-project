@@ -28,6 +28,11 @@ app.use('/wallet', walletRoutes);
 app.use('/product', productRoutes);
 app.use('/bidder', bidderRoutes); // Fix the endpoint for bidderRoutes
 
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
