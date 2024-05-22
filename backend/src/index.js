@@ -12,8 +12,8 @@ const connectDb = require("./config/dbConnection.js");
 connectDb();
 // Parse incoming request bodies
 app.use(bodyParser.json());
-// app.use(cors());
-app.use(cors({origin: '*'}));
+app.use(cors());
+// app.use(cors({origin: '*'}));
   
 
 app.use('/user', userRoutes);
