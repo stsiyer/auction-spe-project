@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: backend
-          image: stsiyer/backend-app
+          image: stsiyer/backend-app:latest
+          imagePullPolicy: Always
           ports:
             - name: http
               containerPort: 5000
