@@ -12,7 +12,7 @@
   - name: Create minikube namespace
     k8s:
       state: present
-      kubeconfig: /home/ganesh/.kube/config
+      kubeconfig: /home/stsiyer/.kube/config
       definition:
         apiVersion: v1
         kind: Namespace
@@ -22,34 +22,34 @@
   - name: Apply secret
     k8s:
       state: present
-      kubeconfig: /home/ganesh/.kube/config 
+      kubeconfig: /home/stsiyer/.kube/config 
       definition: "{{ lookup('file', '/var/lib/jenkins/workspace/auction-app/kubernetes-config/backend-secret.yaml') }}"
       namespace: minikube
 
   - name: Apply configmap
     k8s:
       state: present
-      kubeconfig: /home/ganesh/.kube/config 
+      kubeconfig: /home/stsiyer/.kube/config 
       definition: "{{ lookup('file', '../kubernetes-config/frontend-configmap.yaml') }}"
       namespace: minikube
 
   - name: Apply ingress (if needed)
     k8s:
       state: present
-      kubeconfig: /home/ganesh/.kube/config 
+      kubeconfig: /home/stsiyer/.kube/config 
       definition: "{{ lookup('file', '../kubernetes-config/ingress.yaml') }}"
       namespace: minikube
 
   - name: Apply backend deployment
     k8s:
       state: present
-      kubeconfig: /home/ganesh/.kube/config 
+      kubeconfig: /home/stsiyer/.kube/config 
       definition: "{{ lookup('file', '../kubernetes-config/backend.yaml') }}"
       namespace: minikube
 
   - name: Apply frontend deployment
     k8s:
       state: present
-      kubeconfig: /home/ganesh/.kube/config 
+      kubeconfig: /home/stsiyer/.kube/config 
       definition: "{{ lookup('file', '../kubernetes-config/frontend.yaml') }}"
       namespace: minikube
