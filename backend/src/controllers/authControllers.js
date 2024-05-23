@@ -28,7 +28,7 @@ const signin=async (req, res) => {
     }
 
     // Compare password hashes
-    const isMatch = await bcrypt.compare(password, user.password);
+    const isMatch = password===user.password;
     console.log("Password comparison done");
     if (!isMatch) {
       console.log("Password does not match");
