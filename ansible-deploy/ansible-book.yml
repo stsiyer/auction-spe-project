@@ -4,7 +4,7 @@
   connection: local
   become: true
   vars:
-    ansible_python_interpreter: /var/lib/jenkins/workspace/auction-app/venv/bin/python3.11
+    ansible_python_interpreter: /var/lib/jenkins/workspace/auction-app-1/venv/bin/python3.11
   collections:
     - community.kubernetes
 
@@ -23,7 +23,7 @@
     k8s:
       state: present
       kubeconfig: /home/stsiyer/.kube/config 
-      definition: "{{ lookup('file', '/var/lib/jenkins/workspace/auction-app/kubernetes-config/backend-secret.yaml') }}"
+      definition: "{{ lookup('file', '/var/lib/jenkins/workspace/auction-app-1/kubernetes-config/backend-secret.yaml') }}"
       namespace: minikube
 
   - name: Apply configmap
