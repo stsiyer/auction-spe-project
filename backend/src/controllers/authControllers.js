@@ -72,6 +72,7 @@ const signup=async (req, res) => {
   }
 
   // Hash password before saving
+  console.log("before bcrypt");
   const salt = await bcrypt.genSalt(10);
   console.log("Salt generated");
   const hashedPassword = await bcrypt.hash(password, salt);
