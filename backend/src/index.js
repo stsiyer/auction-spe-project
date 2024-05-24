@@ -48,5 +48,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(port, () => {
-  logger.info(`Server listening on port ${port} rolling update test`);
+  logger.info(`Server listening on port ${port} rolling update is working correctly`);
 });
