@@ -21,34 +21,54 @@
   - name: Apply secret
     k8s:
       state: present
-      kubeconfig: /home/ganesh/.kube/config 
+      kubeconfig: /home/ganesh/.kube/config
       definition: "{{ lookup('file', '/var/lib/jenkins/workspace/auction-app/kubernetes-config/backend-secret.yaml') }}"
       namespace: minikube
 
   - name: Apply configmap
     k8s:
       state: present
-      kubeconfig: /home/ganesh/.kube/config 
+      kubeconfig: /home/ganesh/.kube/config
       definition: "{{ lookup('file', '../kubernetes-config/frontend-configmap.yaml') }}"
       namespace: minikube
 
   - name: Apply ingress (if needed)
     k8s:
       state: present
-      kubeconfig: /home/ganesh/.kube/config 
+      kubeconfig: /home/ganesh/.kube/config
       definition: "{{ lookup('file', '../kubernetes-config/ingress.yaml') }}"
       namespace: minikube
 
-  - name: Apply backend deployment
+  - name: Apply backend deployment and service
     k8s:
       state: present
-      kubeconfig: /home/ganesh/.kube/config 
+      kubeconfig: /home/ganesh/.kube/config
       definition: "{{ lookup('file', '../kubernetes-config/backend.yaml') }}"
       namespace: minikube
 
-  - name: Apply frontend deployment
+  - name: Delete backend pods to force update
+    k8s:
+      api_version: v1
+      kind: Pod
+      kubeconfig: /home/ganesh/.kube/config
+      namespace: minikube
+      label_selectors:
+        - "app=backend"
+      state: absent
+
+  - name: Apply frontend deployment and service
     k8s:
       state: present
-      kubeconfig: /home/ganesh/.kube/config 
+      kubeconfig: /home/ganesh/.kube/config
       definition: "{{ lookup('file', '../kubernetes-config/frontend.yaml') }}"
       namespace: minikube
+
+  - name: Delete frontend pods to force update
+    k8s:
+      api_version: v1
+      kind: Pod
+      kubeconfig: /home/ganesh/.kube/config
+      namespace: minikube
+      label_selectors:
+        - "app=frontend"
+      state: absent

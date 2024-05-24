@@ -1,0 +1,12 @@
+2024-05-24T09:01:34.819Z [[31merror[39m]: uncaughtException: EIO: i/o error, write
+Error: EIO: i/o error, write
+    at writeSync (node:fs:933:3)
+    at SyncWriteStream._write (node:internal/fs/sync_write_stream:26:3)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (/home/ganesh/Desktop/auction-spe-project/backend/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/ganesh/Desktop/auction-spe-project/backend/node_modules/winston-transport/modern.js:82:19)
+    at doWrite (/home/ganesh/Desktop/auction-spe-project/backend/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/home/ganesh/Desktop/auction-spe-project/backend/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Writable.write (/home/ganesh/Desktop/auction-spe-project/backend/node_modules/readable-stream/lib/_stream_writable.js:302:11)
