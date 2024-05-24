@@ -2,10 +2,8 @@
 - name: Deploy app to minikube
   hosts: localhost
   connection: local
-  become: true
   vars:
     ansible_python_interpreter: /var/lib/jenkins/workspace/auction-app/venv/bin/python3.11
-  collections:
   collections:
     - community.kubernetes
 
