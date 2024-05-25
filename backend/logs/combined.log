@@ -2541,3 +2541,352 @@
 2024-05-25T16:09:15.559Z [[32minfo[39m]: HTTP GET /product/allProducts
 2024-05-25T16:09:15.559Z [[32minfo[39m]: Fetching all products
 2024-05-25T16:09:15.580Z [[32minfo[39m]: All products fetched successfully
+2024-05-25T19:57:39.390Z [[32minfo[39m]: Entered signin function
+2024-05-25T19:57:39.392Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T19:57:39.392Z [[32minfo[39m]: Password comparison done
+2024-05-25T19:57:39.392Z [[32minfo[39m]: JWT token generated
+2024-05-25T19:57:39.393Z [[32minfo[39m]: Entered signin function
+2024-05-25T19:57:39.394Z [[33mwarn[39m]: Missing email or password
+2024-05-25T19:57:39.399Z [[32minfo[39m]: Entered signin function
+2024-05-25T19:57:39.399Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T19:57:39.399Z [[33mwarn[39m]: User not found
+2024-05-25T19:57:39.399Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T19:57:39.400Z [[32minfo[39m]: Entered signin function
+2024-05-25T19:57:39.400Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T19:57:39.400Z [[32minfo[39m]: Password comparison done
+2024-05-25T19:57:39.400Z [[33mwarn[39m]: Password does not match
+2024-05-25T19:57:39.400Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T19:57:39.400Z [[32minfo[39m]: Entered signin function
+2024-05-25T19:57:39.400Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T19:57:39.400Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:01:53.164Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:01:53.166Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:01:53.166Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:01:53.166Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:01:53.168Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:01:53.168Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:01:53.173Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:01:53.173Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:01:53.173Z [[33mwarn[39m]: User not found
+2024-05-25T20:01:53.173Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:01:53.174Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:01:53.174Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:01:53.174Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:01:53.174Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:01:53.174Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:01:53.174Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:01:53.174Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:01:53.175Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:03:11.671Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:03:11.672Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:03:11.672Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:03:11.672Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:03:11.674Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:03:11.674Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:03:11.679Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:03:11.679Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:03:11.680Z [[33mwarn[39m]: User not found
+2024-05-25T20:03:11.680Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:03:11.680Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:03:11.680Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:03:11.680Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:03:11.680Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:03:11.681Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:03:11.681Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:03:11.681Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:03:11.681Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:03:52.391Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:03:52.392Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:03:52.393Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:03:52.393Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:03:52.394Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:03:52.394Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:03:52.399Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:03:52.399Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:03:52.400Z [[33mwarn[39m]: User not found
+2024-05-25T20:03:52.400Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:03:52.400Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:03:52.400Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:03:52.400Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:03:52.401Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:03:52.401Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:03:52.401Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:03:52.401Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:03:52.401Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:06:17.527Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:06:17.528Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:06:17.528Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:06:17.529Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:06:17.530Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:06:17.530Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:06:17.536Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:06:17.536Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:06:17.536Z [[33mwarn[39m]: User not found
+2024-05-25T20:06:17.536Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:06:17.537Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:06:17.537Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:06:17.537Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:06:17.537Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:06:17.537Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:06:17.537Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:06:17.537Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:06:17.538Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:08:31.789Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:08:31.790Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:08:31.791Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:08:31.791Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:08:31.792Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:08:31.793Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:08:31.798Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:08:31.798Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:08:31.798Z [[33mwarn[39m]: User not found
+2024-05-25T20:08:31.798Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:08:31.799Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:08:31.799Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:08:31.799Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:08:31.799Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:08:31.799Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:08:31.799Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:08:31.799Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:08:31.799Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:09:57.398Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:10:01.574Z [[31merror[39m]: Error: Expected double-quoted property name in JSON at position 99 (line 7 column 1)
+2024-05-25T20:10:10.624Z [[32minfo[39m]: HTTP POST /user/signin
+2024-05-25T20:10:10.626Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:10:10.626Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:10:36.328Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:10:59.496Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:10:59.498Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:10:59.498Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:10:59.498Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:10:59.500Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:10:59.500Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:10:59.505Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:10:59.505Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:10:59.505Z [[33mwarn[39m]: User not found
+2024-05-25T20:10:59.506Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:10:59.506Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:10:59.506Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:10:59.506Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:10:59.506Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:10:59.506Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:10:59.507Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:10:59.507Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:10:59.507Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:12:13.480Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:13:31.906Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:13:31.907Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:13:31.908Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:13:31.908Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:13:31.909Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:13:31.909Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:13:31.915Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:13:31.915Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:13:31.915Z [[33mwarn[39m]: User not found
+2024-05-25T20:13:31.915Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:13:31.916Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:13:31.916Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:13:31.916Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:13:31.916Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:13:31.916Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:13:31.916Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:13:31.916Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:13:31.917Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:14:10.650Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:14:13.980Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:14:13.982Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:14:13.982Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:14:13.982Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:14:13.984Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:14:13.984Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:14:13.990Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:14:13.990Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:14:13.990Z [[33mwarn[39m]: User not found
+2024-05-25T20:14:13.990Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:14:13.991Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:14:13.991Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:14:13.991Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:14:13.991Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:14:13.991Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:14:13.991Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:14:13.991Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:14:13.991Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:15:05.460Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:15:10.451Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:15:10.453Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:15:10.453Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:15:10.453Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:15:10.455Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:15:10.455Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:15:10.460Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:15:10.461Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:15:10.461Z [[33mwarn[39m]: User not found
+2024-05-25T20:15:10.461Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:15:10.462Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:15:10.462Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:15:10.462Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:15:10.462Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:15:10.462Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:15:10.462Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:15:10.462Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:15:10.463Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:22:09.766Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:22:12.380Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:22:12.381Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:22:12.382Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:22:12.382Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:22:12.383Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:22:12.384Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:22:12.389Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:22:12.389Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:22:12.389Z [[33mwarn[39m]: User not found
+2024-05-25T20:22:12.389Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:22:12.390Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:22:12.390Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:22:12.390Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:22:12.390Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:22:12.390Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:22:12.390Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:22:12.390Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:22:12.391Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:22:30.723Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:22:39.323Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:22:43.689Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:22:43.690Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:22:43.691Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:22:43.691Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:22:43.692Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:22:43.692Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:22:43.693Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:22:43.693Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:22:43.693Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:22:43.697Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:22:43.697Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:22:43.697Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:22:43.697Z [[33mwarn[39m]: User not found
+2024-05-25T20:22:43.698Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:22:43.698Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:22:43.698Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:22:43.698Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:22:43.698Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:22:43.698Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:22:43.699Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:22:43.699Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:22:43.699Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:23:40.767Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:23:49.625Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:23:49.627Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:23:49.627Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:23:49.627Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:23:49.629Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:23:49.629Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:23:49.629Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:23:49.629Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:23:49.629Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:23:49.633Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:24:12.635Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:24:15.202Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:24:22.272Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:24:22.273Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:24:22.274Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:24:22.274Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:24:22.275Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:24:22.275Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:24:49.616Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:24:56.222Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:25:08.388Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:25:12.121Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:25:12.122Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:25:12.122Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:25:12.123Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:25:12.126Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:25:12.126Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:25:12.126Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:25:12.126Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:25:12.126Z [[33mwarn[39m]: User not found
+2024-05-25T20:25:29.353Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:25:40.404Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:25:43.634Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:25:43.635Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:25:43.635Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:25:43.636Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:25:43.637Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:25:43.637Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:25:43.638Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:25:43.638Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:25:43.638Z [[33mwarn[39m]: User not found
+2024-05-25T20:25:43.639Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:25:43.639Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:25:43.642Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:25:49.209Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:25:52.601Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:25:52.603Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:25:52.603Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:25:52.603Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:25:52.605Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:25:52.605Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:25:52.605Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:25:52.605Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:25:52.605Z [[33mwarn[39m]: User not found
+2024-05-25T20:25:52.606Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:25:52.606Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:25:52.606Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:25:52.606Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:25:52.611Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:25:52.611Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:25:52.611Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:25:52.612Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:25:58.687Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:26:01.491Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:26:01.493Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:26:01.493Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:26:01.493Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:26:01.495Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:26:01.495Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:26:01.496Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:26:01.496Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:26:01.496Z [[33mwarn[39m]: User not found
+2024-05-25T20:26:01.496Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:26:01.496Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:26:01.497Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:26:01.497Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:26:01.501Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:26:01.503Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:26:01.504Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:26:01.504Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:26:38.138Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:26:41.868Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:26:41.869Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:26:41.869Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:26:41.870Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:26:41.871Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:26:41.871Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:26:41.872Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:26:41.872Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:26:41.872Z [[33mwarn[39m]: User not found
+2024-05-25T20:26:41.872Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:26:41.873Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:26:41.873Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:26:41.873Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:26:41.877Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:26:41.880Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:26:41.880Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:26:41.881Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:27:13.771Z [[32minfo[39m]: Server listening on port 5001
+2024-05-25T20:27:16.512Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:27:16.514Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:27:16.514Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:27:16.514Z [[32minfo[39m]: JWT token generated
+2024-05-25T20:27:16.516Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:27:16.516Z [[33mwarn[39m]: Missing email or password
+2024-05-25T20:27:16.516Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:27:16.516Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:27:16.516Z [[33mwarn[39m]: User not found
+2024-05-25T20:27:16.517Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:27:16.517Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:27:16.517Z [[32minfo[39m]: Password comparison done
+2024-05-25T20:27:16.517Z [[33mwarn[39m]: Password does not match
+2024-05-25T20:27:16.518Z [[32minfo[39m]: Entered signin function
+2024-05-25T20:27:16.518Z [[32minfo[39m]: Trying to find user by email
+2024-05-25T20:27:16.521Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:27:20.735Z [[32minfo[39m]: Server listening on port 5001

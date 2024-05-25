@@ -19,3 +19,50 @@
 2024-05-25T15:44:31.130Z [[31merror[39m]: Error: User is not authorized
 2024-05-25T16:05:35.378Z [[31merror[39m]: Error: User is not authorized
 2024-05-25T16:07:24.435Z [[31merror[39m]: Error: User is not authorized
+2024-05-25T19:57:39.399Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T19:57:39.400Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T19:57:39.400Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:01:53.173Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:01:53.174Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:01:53.175Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:03:11.680Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:03:11.681Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:03:11.681Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:03:52.400Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:03:52.401Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:03:52.401Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:06:17.536Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:06:17.537Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:06:17.538Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:08:31.798Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:08:31.799Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:08:31.799Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:10:01.574Z [[31merror[39m]: Error: Expected double-quoted property name in JSON at position 99 (line 7 column 1)
+2024-05-25T20:10:59.506Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:10:59.506Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:10:59.507Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:13:31.915Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:13:31.916Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:13:31.917Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:14:13.990Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:14:13.991Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:14:13.991Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:15:10.461Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:15:10.462Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:15:10.463Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:22:12.389Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:22:12.390Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:22:12.391Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:22:43.697Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:22:43.698Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:22:43.698Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:22:43.699Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:23:49.633Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:25:43.642Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:25:52.611Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:25:52.612Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:26:01.501Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:26:01.504Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:26:41.877Z [[31merror[39m]: Error during signin process Cannot read properties of undefined (reading 'json')
+2024-05-25T20:26:41.881Z [[31merror[39m]: Error during signin process Database error
+2024-05-25T20:27:16.521Z [[31merror[39m]: Error during signin process Database error

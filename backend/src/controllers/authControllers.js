@@ -1,4 +1,3 @@
-const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const jwtSecret = process.env.JWT_SECRET;
@@ -12,7 +11,9 @@ const signin = async (req, res) => {
   // Validate user input (implement proper validation)
   if (!email || !password) {
     logger.warn("Missing email or password");
-    return res.status(400).json({ message: 'Please fill in all fields' });
+    res.status(400);
+    res.json({ message: 'Please fill in all fields' });
+    return res;
   }
 
   // Find user by email
@@ -21,7 +22,9 @@ const signin = async (req, res) => {
     const user = await User.findOne({ email });
     if (!user) {
       logger.warn("User not found");
-      return res.status(401).json({ message: 'Invalid email or password' });
+      res.status(401);
+      res.json({ message: 'Invalid email or password' });
+      return res;
     }
 
     // Compare password hashes
@@ -29,7 +32,9 @@ const signin = async (req, res) => {
     logger.info("Password comparison done");
     if (!isMatch) {
       logger.warn("Password does not match");
-      return res.status(401).json({ message: 'Invalid email or password' });
+      res.status(401);
+      res.json({ message: 'Invalid email or password' });
+      return res;
     }
 
     // Generate JWT token
@@ -40,7 +45,8 @@ const signin = async (req, res) => {
     res.json({ message: 'Login successful', token });
   } catch (err) {
     logger.error("Error during signin process", err);
-    res.status(500).json({ message: 'Server error' });
+    res.status(500);
+    res.json({ message: 'Server error' });
   }
 };
 
@@ -61,7 +67,9 @@ const signup = async (req, res) => {
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       logger.warn("User already exists");
-      return res.status(400).json({ message: 'Email already in use' });
+       res.status(400);
+      res.json({ message: 'Email already in use' });
+      return res;
     }
   } catch (err) {
     logger.error("Error during signup process", err);
