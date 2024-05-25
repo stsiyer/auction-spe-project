@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
-// import { Link } from 'react-router-dom';
-import './BrowseAuction.css'
+// import { Link } from 'react-router-dom'; // Include if you're using routing
+import './BrowseAuction.css';
+import AuctionItem from './AuctionItem';
+import { Link } from 'react-router-dom';
+
 const BrowseAuction = () => {
   const [auctions, setAuctions] = useState([]); // State to store auction data
 
@@ -17,18 +20,24 @@ const BrowseAuction = () => {
 
   return (
     <div className="browse-auctions">
-      <h1>Browse Auctions</h1>
+      <h1 className="browse-header">Browse Auctions</h1>
       {auctions.length > 0 ? (
         <section className="auction-grid">
           {auctions.map((auction) => (
             <article key={auction._id} className="auction-item">
-              {/* <Link to={`http://192.168.49.2:30002/product/${auction.id}`}> */}
-                <img src={auction.image} alt={auction.title} style={{ width: '100px', height: '100px', objectFit: 'cover' }}/>
-                <div className="auction-details">
-                  <h3>{auction.description}</h3>
-                  <span>Current Bid: Rs {auction.currHighestBid}</span>
+              {/** Include routing if needed */}
+              <Link to={`/product/${auction._id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <div className="image-container">
+                  <img
+                    src={auction.image}
+                    alt={auction.title}
+                    style={{ width: '100px', height: '100px', objectFit: 'cover' }}
+                  />
                 </div>
-              {/* </Link> */}
+                <div className="auction-details">
+                  <AuctionItem auction={auction} />
+                </div>
+              </Link>
             </article>
           ))}
         </section>

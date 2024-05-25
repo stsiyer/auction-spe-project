@@ -47,11 +47,7 @@ const SellSomething = () => {
       // Define the headers with JWT token and JSON data
       const headers = {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`,
-        'Custom-Header': JSON.stringify({
-          customKey: 'customValue',
-          anotherKey: 'anotherValue',
-        }),
+        'Authorization': `Bearer ${token}`
       };
       console.log('Sending product data:', productData); // Debugging statement
 
@@ -61,6 +57,7 @@ const SellSomething = () => {
 
       if (response.status === 200) {
         console.log('Product created successfully:', response.data);
+        alert(response.data.message)
         // Handle successful product creation (e.g., redirect to a confirmation page)
       } else {
         throw new Error('Something went wrong. Please try again later.');
@@ -108,7 +105,7 @@ const SellSomething = () => {
         />
         <label htmlFor="timeToEnd">Auction End Date and Time:</label>
         <input
-          type="datetime"
+          type="datetime-local"
           name="timeToEnd"
           id="timeToEnd"
           value={formData.timeToEnd}

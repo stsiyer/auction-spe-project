@@ -1,0 +1,21 @@
+2024-05-25T08:54:04.161Z [[31merror[39m]: Error: User is not authorized
+2024-05-25T08:55:22.849Z [[31merror[39m]: Error: User is not authorized
+2024-05-25T09:18:29.138Z [[31merror[39m]: Server error during add to wallet process: User validation failed: wallet: Cast to Number failed for value "NaN" (type number) at path "wallet"
+2024-05-25T09:18:29.180Z [[31merror[39m]: Server error during add to wallet process: User validation failed: wallet: Cast to Number failed for value "NaN" (type number) at path "wallet"
+2024-05-25T09:21:44.210Z [[31merror[39m]: Error: User is not authorized
+2024-05-25T09:24:17.391Z [[31merror[39m]: Error: User is not authorized
+2024-05-25T11:11:56.333Z [[31merror[39m]: Error fetching product: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
+2024-05-25T11:17:10.677Z [[31merror[39m]: Error fetching product: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
+2024-05-25T12:30:54.217Z [[31merror[39m]: Error fetching product: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
+2024-05-25T12:31:46.400Z [[31merror[39m]: Error fetching product: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
+2024-05-25T12:31:51.402Z [[31merror[39m]: Error fetching product: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
+2024-05-25T12:31:55.763Z [[31merror[39m]: Error fetching product: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Product"
+2024-05-25T13:23:21.810Z [[31merror[39m]: Error: User is not authorized
+2024-05-25T13:23:21.812Z [[31merror[39m]: Error: User is not authorized
+2024-05-25T13:24:22.450Z [[31merror[39m]: Error: User is not authorized
+2024-05-25T13:24:22.451Z [[31merror[39m]: Error: User is not authorized
+2024-05-25T13:24:27.528Z [[31merror[39m]: Error: User is not authorized
+2024-05-25T13:24:27.529Z [[31merror[39m]: Error: User is not authorized
+2024-05-25T15:44:31.130Z [[31merror[39m]: Error: User is not authorized
+2024-05-25T16:05:35.378Z [[31merror[39m]: Error: User is not authorized
+2024-05-25T16:07:24.435Z [[31merror[39m]: Error: User is not authorized

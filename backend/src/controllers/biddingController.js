@@ -28,12 +28,12 @@ const bidProduct = async (req, res) => {
     
     if (bidPrice > user.wallet) {
       logger.warn("User balance is too low");
-      return res.status(404).json({ message: "Balance is low" });
+      return res.status(200).json({ message: "Balance is low" });
     }
     
     if (product.currHighestBid >= bidPrice) {
       logger.warn("Bid price is not higher than the current highest bid");
-      return res.status(404).json({ message: "Someone bidded higher" });
+      return res.status(200).json({ message: "Someone bidded higher" });
     }
     
     user.wallet -= bidPrice;

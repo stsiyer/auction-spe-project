@@ -7,6 +7,7 @@ import BrowseAuction from "./components/BrowseAuction/BrowseAuction";
 import SellSomething from "./components/SellSomehing/SellSomething";
 import SignupForm from "./components/Signup/signup";
 import LoginPage from "./components/Login/login";
+import ProductDetails from "./components/ProductDetail/ProductDetail";
 // import AboutUs from './AboutUs'; // Example component
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             page
             {/* <Route path="/about" element={<AboutUs />} /> Route for about page */}
             {/* Add more routes for other pages as needed */}
+            <Route path="/product/:productId" element={<ProductDetails />} />
           </Routes>
         </main>
       </div>

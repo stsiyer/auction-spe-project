@@ -11,19 +11,19 @@ function SignupForm() {
   const [errorMessage, setErrorMessage] = useState('');
   const [signupSuccess, setSignupSuccess] = useState(false);
 
-  useEffect(() => {
-    const checkHealth = async () => {
-      try {
-        const response = await fetch('http://192.168.49.2:30002/health');
-        const data = await response.text();
-        alert(`Health Check: ${data}`);
-      } catch (error) {
-        alert(`Health Check Failed: ${error.message}`);
-      }
-    };
+  // useEffect(() => {
+  //   const checkHealth = async () => {
+  //     try {
+  //       const response = await fetch('http://192.168.49.2:30002/health');
+  //       const data = await response.text();
+  //       alert(`Health Check: ${data}`);
+  //     } catch (error) {
+  //       alert(`Health Check Failed: ${error.message}`);
+  //     }
+  //   };
 
-    checkHealth();
-  }, []);
+  //   checkHealth();
+  // }, []);
 
   const handleSubmit = async (event) => {
     event.preventDefault();

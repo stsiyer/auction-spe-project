@@ -1,6 +1,6 @@
 /* Base styles for the navbar */
 .auction-navbar {
-    background-color: #cdd3ce;
+    background-color: #f8facf;
     padding: 1rem 2rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -104,7 +104,7 @@
   }
   
   .dropdown-item:hover {
-    background-color: #f8f9fa;
+    background-color: #cde4fc;
   }
   
   .dropdown:hover .dropdown-menu { /* Show dropdown menu on hover */

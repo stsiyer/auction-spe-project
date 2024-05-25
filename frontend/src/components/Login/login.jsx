@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios'; // Assuming you're using Axios for API calls
-import './login.css'
+import './login.css';
+
 function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -20,8 +21,8 @@ function LoginPage() {
         email,
         password,
       });
-      console.log(response);
-      if (!response.status===200) {
+
+      if (!response.status === 200) {
         throw new Error(`Login failed with status: ${response.status}`);
       }
 
@@ -30,41 +31,44 @@ function LoginPage() {
       console.log('Login successful! Token:', token);
       // Store the token in local storage or state management (e.g., Redux)
       localStorage.setItem('jwtToken', token);
-
+      localStorage.setItem('isLoggedIn', true);
       // Redirect to a protected route or dashboard page after successful login
       window.location.href = '/browse'; // Replace with your desired redirect route
-
     } catch (error) {
       setErrorMessage(error.message);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h3>Login</h3>
-      {errorMessage && <p className="error-message">{errorMessage}</p>}
-      <div className="form-group">
-        <label htmlFor="username">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+    <div className="login-container">
+      <div className="login-form-wrapper">
+        <form onSubmit={handleSubmit}>
+          <h3>Welcome Back!</h3>
+          {errorMessage && <p className="error-message">{errorMessage}</p>}
+          <div className="form-group">
+            <label htmlFor="username">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          <button type="submit">Login</button>
+        </form>
       </div>
-      <div className="form-group">
-        <label htmlFor="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </div>
-      <button type="submit">Login</button>
-    </form>
+    </div>
   );
 }
 
