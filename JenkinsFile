@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'test', credentialsId: 'github', url: 'https://github.com/stsiyer/auction-spe-project.git'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/stsiyer/auction-spe-project.git'
             }
         }
 
@@ -31,6 +31,14 @@ pipeline {
                             sh 'npm install'
                         }
                     }
+                }
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                dir('backend') {
+                    sh 'npm run test'
                 }
             }
         }
@@ -78,7 +86,7 @@ pipeline {
 
         stage('Deploy with Ansible') {
           steps {
-              sh 'ansible-playbook -vvv ansible-deploy/ansible-book.yml -i ansible-deploy/inventory'
+              sh 'sudo -u ganesh ansible-playbook -vvv ansible-deploy/ansible-book.yml -i ansible-deploy/inventory'
             }
         }
     }
