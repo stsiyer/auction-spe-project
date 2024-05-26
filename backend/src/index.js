@@ -47,7 +47,6 @@ app.use((err, req, res, next) => {
   res.status(500).send('Something broke!');
 });
 
-
 app.listen(port, () => {
   logger.info(`Server listening on port ${port}`);
 });
