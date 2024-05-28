@@ -32,13 +32,6 @@
       definition: "{{ lookup('file', '../kubernetes-config/frontend-configmap.yaml') }}"
       namespace: minikube
 
-  - name: Apply ingress (if needed)
-    k8s:
-      state: present
-      kubeconfig: /home/ganesh/.kube/config
-      definition: "{{ lookup('file', '../kubernetes-config/ingress.yaml') }}"
-      namespace: minikube
-
   - name: Apply backend deployment and service
     k8s:
       state: present

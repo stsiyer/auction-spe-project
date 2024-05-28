@@ -9,7 +9,7 @@ const logger = createLogger({
   level: 'info',
   format: combine(
     timestamp(),
-    colorize(),
+    // colorize(),
     myFormat
   ),
   transports: [

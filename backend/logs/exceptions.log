@@ -10,3 +10,27 @@ Error: EIO: i/o error, write
     at doWrite (/home/ganesh/Desktop/auction-spe-project/backend/node_modules/readable-stream/lib/_stream_writable.js:390:139)
     at writeOrBuffer (/home/ganesh/Desktop/auction-spe-project/backend/node_modules/readable-stream/lib/_stream_writable.js:381:5)
     at Writable.write (/home/ganesh/Desktop/auction-spe-project/backend/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+2024-05-26T19:23:12.503Z [[31merror[39m]: uncaughtException: listen EADDRINUSE: address already in use :::5012
+Error: listen EADDRINUSE: address already in use :::5012
+    at Server.setupListenHandle [as _listen2] (node:net:1727:16)
+    at listenInCluster (node:net:1775:12)
+    at Server.listen (node:net:1863:7)
+    at Function.listen (/home/ganesh/Desktop/auction-spe-project/backend/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/ganesh/Desktop/auction-spe-project/backend/src/index.js:50:5)
+    at Module._compile (node:internal/modules/cjs/loader:1218:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1272:10)
+    at Module.load (node:internal/modules/cjs/loader:1081:32)
+    at Module._load (node:internal/modules/cjs/loader:922:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+2024-05-26T19:53:18.905Z [error]: uncaughtException: listen EADDRINUSE: address already in use :::5013
+Error: listen EADDRINUSE: address already in use :::5013
+    at Server.setupListenHandle [as _listen2] (node:net:1727:16)
+    at listenInCluster (node:net:1775:12)
+    at Server.listen (node:net:1863:7)
+    at Function.listen (/home/ganesh/Desktop/auction-spe-project/backend/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/ganesh/Desktop/auction-spe-project/backend/src/index.js:50:5)
+    at Module._compile (node:internal/modules/cjs/loader:1218:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1272:10)
+    at Module.load (node:internal/modules/cjs/loader:1081:32)
+    at Module._load (node:internal/modules/cjs/loader:922:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
