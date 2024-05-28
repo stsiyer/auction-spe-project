@@ -13,8 +13,6 @@ RUN npm install
 # Copy the rest of the backend code to the container
 COPY . .
 
-# Run tests during the build process (optional, but recommended)
-# RUN npm run test
 
 # Expose the port that the application will run on
 EXPOSE 5000
